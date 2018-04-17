@@ -1,0 +1,47 @@
+:global(.transitionWrap-enter) {
+    opacity: 0.01;
+}
+
+:global(.transitionWrap-enter.transitionWrap-enter-active) {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+:global(.transitionWrap-leave) {
+    opacity: 1;
+}
+
+:global(.transitionWrap-leave.transitionWrap-leave-active) {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+:global(.transitionWrap-appear) {
+    opacity: 1;
+}
+
+:global(.transitionWrap-appear.transitionWrap-appear-active) {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.routerWrap{
+    display: flex
+}
+
+.routerTitle{
+     padding: 10px; 
+     width: 200px; 
+     background: #f0f0f0;
+}
+
+.routerRootUl {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.routerContent {
+    flex: 1;
+    padding: 10px;
+    background-color: #e0e0e0;
+}

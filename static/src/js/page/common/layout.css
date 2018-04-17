@@ -1,0 +1,58 @@
+:global(.transitionWrap-enter) {
+  opacity: 0.01;
+}
+
+:global(.transitionWrap-enter.transitionWrap-enter-active) {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+:global(.transitionWrap-leave) {
+  opacity: 1;
+}
+
+:global(.transitionWrap-leave.transitionWrap-leave-active) {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+:global(.transitionWrap-appear) {
+  opacity: 1;
+}
+
+:global(.transitionWrap-appear.transitionWrap-appear-active) {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+:global(.contentBody){
+    background: #fff;
+    padding: 0; 
+}
+
+.ant-back-top {
+  bottom: 100px;
+}
+
+.ant-back-top-inner {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.layoutWrap {
+  min-height: 100vh;
+}
+
+.contentWrap {
+  margin: 0 16px;
+}
+
+.breadcrumb{
+  margin: 16px 0;
+}

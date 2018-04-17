@@ -1,0 +1,94 @@
+{
+  "name": "react-antd-demo",
+  "version": "1.0.0",
+  "description": "react-antd-demo",
+  "keywords": [
+    "react-antd-demo",
+    "node+express+react+redux+react-router+sass+es6+webpack+gulp"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "zehao.sun",
+    "email": "zehao.sun"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szh0526/react-antd-demo.git"
+  },
+  "private": true,
+  "scripts": {
+    "clean": "rimraf static/build/*",
+    "mock": "export DEBUG_WITH_MOCK=1 && npm start",
+    "debug_mock": "export DEBUG_WITH_MOCK=1 && devtool app.js --watch",
+    "debug": "devtool app.js --watch",
+    "pm2": "pm2 start pm2.json --env test",
+    "start": "node app",
+    "devserver": "webpack-dev-server --config ./config/webpack/webpack.config.js --watch --hot --inline --cache",
+    "server": "http-server -p 10000 dist/",
+    "lines": "find static -name \"*.js\" | xargs cat | wc -l"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react-app": "^3.1.0",
+    "babel-runtime": "^6.26.0",
+    "case-sensitive-paths-webpack-plugin": "^2.1.1",
+    "chalk": "^1.1.3",
+    "css-loader": "^0.28.7",
+    "del": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "fs-extra": "^3.0.1",
+    "gulp": "3.9.1",
+    "gulp-util": "^3.0.8",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "4.7.2",
+    "object-assign": "^4.1.1",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "promise": "^8.0.1",
+    "react-dev-utils": "^4.2.1",
+    "react-error-boundaries": "^1.1.4",
+    "react-hot-loader": "^3.1.3",
+    "react-prop-types": "^0.4.0",
+    "run-sequence": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-manifest-plugin": "^1.3.2"
+  },
+  "dependencies": {
+    "antd": "3.2.0",
+    "isomorphic-fetch": "2.2.1",
+    "react": "16.2.0",
+    "react-addons-css-transition-group": "15.6.2",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.2.2",
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.2.0"
+  },
+  "Engines": {
+    "engines": {
+      "node": ">=8.9.4",
+      "npm": "5.6.0"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+1.chunk不能及时编译  用module.hot热更新试试

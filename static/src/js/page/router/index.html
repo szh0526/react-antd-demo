@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css3过渡动画</title>
+    <style> 
+        div{
+            width: 100px; height: 100px;
+            background: blue;
+            opacity:0.1;
+            filter:alpha(opacity=10);
+            transition: opacity 500ms ease-in;
+        }
+
+        div:hover{
+            opacity:1;
+            filter:alpha(opacity=1);
+            transition: opacity 500ms ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+
+</html>

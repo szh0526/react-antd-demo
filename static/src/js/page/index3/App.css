@@ -1,0 +1,32 @@
+
+.App {
+  margin: 10px;
+  float: left;
+  width: 1200px;
+}
+
+.App p{
+  border: 1px solid #00A0E9;
+}
+
+.gutter-example .ant-row > div {
+  background: transparent;
+  border: 0;
+}
+.gutter-box {
+  background: #00A0E9;
+  padding: 5px 0;
+}
+
+.height-120{
+  height: 120px;
+}
+.height-100{
+  height: 100px;
+}
+.height-80{
+  height: 80px;
+}
+.height-50{
+  height: 50px;
+}
